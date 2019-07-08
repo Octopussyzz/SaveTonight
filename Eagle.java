@@ -54,6 +54,8 @@ public class Eagle extends Bird implements Fly {
             this.altitude = 0;
             this.flying = false;
             System.out.printf("Oh god, I can't believe it, %s is just here ! He landed right in front of us, RUN !%n", this.getName());
+        } else {
+            System.out.printf("%s can't land, his altitude is too high ! It's %d meters !%n", this.getName(), this.getAltitude());
         }
     }
 
